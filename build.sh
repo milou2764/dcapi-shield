@@ -1,3 +1,4 @@
+npm install
 npx esbuild main.js \
   --bundle \
   --platform=browser \
