@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "client authenticator",
+    "description": "",
+    "version": "1.0",
+    "host_permissions": ["https://*/*"],
+    "permissions":["storage"],
+    "content_scripts": [
+        {
+            "js": ["script.js"],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "web_accessible_resources": [{
+        "resources": ["inject.js"],
+        "matches": ["<all_urls>"]
+    }]
+
+}
+
